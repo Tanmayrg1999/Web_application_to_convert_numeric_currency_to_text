@@ -7,11 +7,22 @@ Rocket is a web framework for Rust. It is used to design Web applications in the
 3. After installing the nightly version we will create a new binary-based Cargo project using the command -> **cargo new my_web_app --bin**
 4. Then we need to move our action to the created directory using the -> **cd my_web_app**
 5. Now a cargo.toml file would be created by default we need to add: 
-[dependencies] rocket = "0.4.5"
-[dependencies.rocket_contrib]
-version = "* "
-default-features = false
-features = ["json","serve","tera_templates"]
+--- 
+`[dependencies] `
+
+`rocket = "0.4.5"`
+
+`[dependencies.rocket_contrib]`
+
+`version = "* "`
+
+`default-features = false`
+
+`features = ["json","serve","tera_templates"]`
+
 6. After adding the files to the correct location. Just compile and execute the program my using the command **cargo run**.
-7. If the cargo project runs succesfully , then just open the [title](localhost:8000/) in any browser and a form will be displayed on the webpage which asks the user to enter the valid currency and the language in which the suer expects the output.
-## OUTPUT
+7. If the cargo project runs succesfully , then just open the [Link](http://localhost:8000/) in any browser and a form will be displayed on the webpage which asks the user to enter the valid currency and the language in which the user expects the output.
+## USER PAGE TO ENTER THE INPUT
+![p1](https://user-images.githubusercontent.com/53641559/88204510-f9553f00-cc68-11ea-8ccd-d02857f212d7.png)
+## OUTPUT AS EXPECTED
+![p2](https://user-images.githubusercontent.com/53641559/88204521-feb28980-cc68-11ea-950b-c15fa709103a.png)

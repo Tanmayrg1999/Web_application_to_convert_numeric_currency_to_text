@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <h1>My Currency To Text Converter</h1>
+    <form action="" method="post" accept-charset="UTF-8">
+        <label>Number:
+          <input name="number" placeholder="12345.67" step="0.01" min="0" max="10" />
+        </label><br /><br />
+        <label>Language:
+          <select name="Language">
+            <option value="English"selected>English</option>
+            <option value="Bengali" >Bengali</option>
+            <option value="Gujrati">Gujrati</option>
+            <option value="Marathi">Marathi</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+        </label> 
+        <br /><br />
+        <label>:Submit
+          <input type="Submit" value="check">
+        </label>
+        <br>  
+
+ <ul>
+ <li>{{ name }}</li>
+            <li>{{ items }}</li>
+    </ul>
+  </body>
+</html>

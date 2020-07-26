@@ -15,14 +15,13 @@
           </select>
         </label> 
         <br /><br />
-        <label>:Submit
+        <label>Submit:
           <input type="Submit" value="check">
         </label>
-        <br>  
-
- <ul>
- <li>{{ name }}</li>
-            <li>{{ items }}</li>
-    </ul>
+        <br> 
+ <dl>
+ <dt>{{ name }}</dt>
+            <dt>{{ items }}</dt>
+    </dl>
   </body>
 </html>

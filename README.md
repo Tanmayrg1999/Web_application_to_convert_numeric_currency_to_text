@@ -28,8 +28,9 @@ Rocket is a web framework for Rust. It is used to design Web applications in the
 
 `features = ["json","serve","tera_templates"]`
 
-6. After adding the files to the correct location. Just compile and execute the program my using the command **cargo run**.
-7. If the cargo project runs succesfully , then just open the [Link](http://localhost:8000/) in any browser and a form will be displayed on the webpage which asks the user to enter the valid currency and the language in which the user expects the output.
+6.Create a template folder so as to store the index.html and index.html.tera file in the new package created.
+7. After adding the files to the correct location. Just compile and execute the program my using the command **cargo run**.
+8. If the cargo project runs succesfully , then just open the [Link](http://localhost:8000/) in any browser and a form will be displayed on the webpage which asks the user to enter the valid currency and the language in which the user expects the output.
 ## WHAT IS INDEX.HTML
 This is the page where our initial form is available or the page where the user is made to enter the details. This is a basic html form with two input types namely the number and the language in which the user expects the output. Also some form validations are added as like the user has to enter the number else it generates a warning. another validation is that if the user enters the empty number then a validation runs which requests user to enter a number. Also the number must contain maximum of 9 digits before the decimal point and also it prohibits user to enter a negative value. One more validation is that the user must include maximum of 2 numbers after the decimal points. The user has to click the check button and the page gives the index.html.tera as the output. 
 ## WHAT IS INDEX.TERA.HTML

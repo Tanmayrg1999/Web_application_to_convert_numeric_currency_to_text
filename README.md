@@ -22,6 +22,12 @@ Rocket is a web framework for Rust. It is used to design Web applications in the
 
 6. After adding the files to the correct location. Just compile and execute the program my using the command **cargo run**.
 7. If the cargo project runs succesfully , then just open the [Link](http://localhost:8000/) in any browser and a form will be displayed on the webpage which asks the user to enter the valid currency and the language in which the user expects the output.
+## WHAT IS INDEX.HTML
+This is the page where our initial form is available or the page where the user is made to enter the details. This is a basic html form with two input types namely the number and the language in which the user expects the output. Also some form validations are added as like the user has to enter the number else it generates a warning. another validation is that if the user enters the empty number then a validation runs which requests user to enter a number. Also the number must contain maximum of 9 digits before the decimal point and also it prohibits user to enter a negative value. One more validation is that the user must include maximum of 2 numbers after the decimal points. The user has to click the check button and the page gives the index.html.tera as the output. 
+## WHAT IS INDEX.TERA.HTML
+A Tera template is just a text file where variables and expressions get replaced with values when it is rendered. the format for this tera file is similar to that of html file. The first entity that was added to the tera file was the currency textual output. This was done by the use of simple description list using the **"dl** tags in HTML and "items" was the textual output written inside **"{{items}}"**. Another functionality was added to the tera file which copied the textual output on a click for this a small css code was used which copied the data using the function named "myfunction()" and on succesfull copying it poped up a text showing "text copied !".All you need is to just click on the "Click me to copy to clipboard".
+
+
 ## USER PAGE TO ENTER THE INPUT
 ![p11](https://user-images.githubusercontent.com/53641559/88573850-03a77c80-d05f-11ea-9f06-b9bc61ef3989.png)
 ## OUTPUT AS EXPECTED

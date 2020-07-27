@@ -43,9 +43,7 @@ let intamount= x as i32;
 let _diff: f64 = x - f64::from(intamount);
 let _fn: f64 = _diff * f64::from(100);
 let _int_fn = _fn.round();
-output.push_str("Your currency value is :");
-output.push_str(&(sink.number).to_string());
-output.push_str("\n Text output is :");
+let mut name1=String::new();
 match sink.Language
 {
     FormOption::English=>{
@@ -53,75 +51,65 @@ match sink.Language
             output.push_str("INR ");
             output.push_str(&*english::hashmap_english2(intamount));
             output.push_str(&(_int_fn).to_string());
-            output.push_str("/100");
+            output.push_str("/100");name1.push_str("Your currency value is Rs.");
+            name1.push_str(&(sink.number).to_string());
     }
 if intamount>100&&intamount<1000000000 {
             output.push_str("INR ");
             output.push_str(&*english::hashmap_english3(intamount));
             output.push_str(&(_int_fn).to_string());
             output.push_str("/100");
+            name1.push_str("Your currency value is Rs.");
+name1.push_str(&(sink.number).to_string());
         }
-    if(intamount<1&&intamount>100000000)
-    {
-        output.push_str("Enter a valid input.\nNo must be between 0.00-100000000.00");
-    }
 }
 FormOption::Bengali=>{
     if intamount<1000000000&&intamount>0{
+        name1.push_str("তোমার মুদ্রা মান হয় টাকা.");
+        name1.push_str(&(sink.number).to_string());
            output.push_str("INR ");
             output.push_str(&*bengali::hashmap_bengali2(intamount));
             output.push_str(&(_int_fn).to_string());
             output.push_str("/100");
     }
-        if(intamount<1&&intamount>100000000)
- {
-                output.push_str("Enter a valid input.\nNo must be between 0.00-100000000.00");
-    }
 }
 FormOption::Gujrati=>{
      if intamount<1000000000&&intamount>0{
-    output.push_str("INR ");
+           name1.push_str("તમારી ચલણ કિંમત રૂ.");
+        name1.push_str(&(sink.number).to_string());
+         output.push_str("INR ");
             output.push_str(&*gujrati::hashmap_gujrati2(intamount));
             output.push_str(&(_int_fn).to_string());
             output.push_str("/100");}
-        if(intamount<1&&intamount>100000000)
- {
-                        output.push_str("Enter a valid input.\nNo must be between 0.00-100000000.00");
-    }
+
 }
 FormOption::Hindi=>{
      if intamount<1000000000&&intamount>0{
- output.push_str("INR ");
+         name1.push_str("आपकी मुद्रा का मूल्य रु.");
+        name1.push_str(&(sink.number).to_string());
+         output.push_str("INR ");
             output.push_str(&*hindi::hashmap_hindi2(intamount));
             output.push_str(&(_int_fn).to_string());
             output.push_str("/100");
      }
-         if(intamount<1&&intamount>100000000)
- {
-            output.push_str("Enter a valid input.\nNo must be between 0.00-100000000.00");
-    }
 }
 FormOption::Marathi=>{
          if intamount<1000000000&&intamount>0{
- output.push_str("INR ");
+            name1.push_str("तुमचे चलन मूल्य रु.");
+            name1.push_str(&(sink.number).to_string());
+            output.push_str("INR ");
             output.push_str(&*marathi::hashmap_marathi2(intamount));
             output.push_str(&(_int_fn).to_string());
             output.push_str("/100");
 }
-     if(intamount<1&&intamount>100000000)
- {
-            output.push_str("Enter a valid input.\nNo must be between 0.00-100000000.00");
-    }
 }
 }
-let mut name1=String::new();
-name1="Your output is:".to_string();
- let context = TemplateContext { name:name1, items: output };
+let context = TemplateContext { name:name1, items: output };
  Template::render("index", &context)
 }
 #[get("/",rank=2)]
 fn index() -> Option<NamedFile> {
-    NamedFile::open("static/index.html").ok()
+    NamedFile::open("templates/index.html").ok()
 }
 fn rocket() -> rocket::Rocket {
     rocket::ignite().mount("/", routes![sink1,index]).attach(Template::fairing())

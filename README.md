@@ -23,6 +23,6 @@ Rocket is a web framework for Rust. It is used to design Web applications in the
 6. After adding the files to the correct location. Just compile and execute the program my using the command **cargo run**.
 7. If the cargo project runs succesfully , then just open the [Link](http://localhost:8000/) in any browser and a form will be displayed on the webpage which asks the user to enter the valid currency and the language in which the user expects the output.
 ## USER PAGE TO ENTER THE INPUT
-![p2](https://user-images.githubusercontent.com/53641559/88472077-1b7ee380-cf2d-11ea-896b-89423ab5d4be.png)
+![p11](https://user-images.githubusercontent.com/53641559/88536592-b6f57e80-d029-11ea-9ad5-2e8eb8ed064c.png)
 ## OUTPUT AS EXPECTED
-![p3](https://user-images.githubusercontent.com/53641559/88472079-1cb01080-cf2d-11ea-8199-a1ff1d2bf771.png)
+![p12](https://user-images.githubusercontent.com/53641559/88536595-b826ab80-d029-11ea-802a-615e4e559203.png)

@@ -38,7 +38,19 @@ This is the page where our initial form is available or the page where the user 
 ## WHAT IS INDEX.TERA.HTML
 A Tera template is just a text file where variables and expressions get replaced with values when it is rendered. the format for this tera file is similar to that of html file. The first entity that was added to the tera file was the currency textual output. This was done by the use of simple description list using the **"dl** tags in HTML and "items" was the textual output written inside **"{{items}}"**. Another functionality was added to the tera file which copied the textual output on a click for this a small css code was used which copied the data using the function named "myfunction()" and on succesfull copying it poped up a text showing "text copied !".All you need is to just click on the "Click me to copy to clipboard".
 
-
+## LEARNING OUTCOMES FROM PROJECT
+1.Designing of flowchart to understand the program flow approach.<br>
+2.Importance of Source Control and why is it necessary to locally store your program status.<br>
+3.Naming variables in a user understandable fashion so to make program more user friendly.<br>
+4.Comments in code make the code more readable and understandable.<br>
+5.Importance of unit tests.<br>
+6.What is a code coverage and how to improve the code coverage.<br>
+7.How to shift from one language to another keeping the semantic logic same.<br>
+8.Basic syntax of RUST and advantages of RUST over other languages.<br>
+9.Error handling and adding constraints to WEB API.<br>
+10.File handling in RUST and C++.<br>
+11.Designing a webpage or a page by the functionalities of HTML ,CSS and JavaScript.<br>
+12.Working with UI Frameworks. I searched a lot about the web UI and found that Actix web and Rocket are useful for designing WEB API in RUST Language and came up with choosing Rocket framework.<br>
 ## USER PAGE TO ENTER THE INPUT
 ![p11](https://user-images.githubusercontent.com/53641559/88573850-03a77c80-d05f-11ea-9f06-b9bc61ef3989.png)
 ## OUTPUT AS EXPECTED
